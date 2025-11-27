@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "airway",
+	"version": "${version}",
+	"name": "Airway",
+	"description": "Adding a few things to do with weather",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/airway/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.skuid.airway.Airway"
+		],
+		"fabric-datagen": [
+			"com.skuid.airway.AirwayDataGenerator"
+		],
+		"client": [
+			"com.skuid.airway.AirwayClient"
+		]
+	},
+	"mixins": [
+		"airway.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
